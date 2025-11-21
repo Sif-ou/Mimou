@@ -1,0 +1,340 @@
+:root {
+    --main-color: #000000 ; 
+    --main-background-color : white ;
+    --main-background-color-transparent-50 : rgba(255, 255, 255, 0.66)  ; 
+}
+
+
+body{
+    color: var(--main-color) ;
+    background-color: var( --main-background-color ) ;
+    padding: 0;        
+    margin: 0;   
+    font-family: 'Quicksand', sans-serif !important ;
+    padding-top: 7vh ;
+}
+
+header{
+    display: flex ;
+    align-items: center;           
+    justify-content: space-between;
+    position: relative ;
+    position: fixed ;
+    width: 100% ;
+    left: 0 ;
+    top: 0 ;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    background-color: var(--main-background-color-transparent-50) ; 
+}
+
+nav{
+    display: flex ;
+    padding-left: 1% ;
+    padding-right: 1% ;
+    width: 80% ;
+}
+
+nav .logo {
+    padding: 1% ;
+    width: 8% ;
+}
+
+nav ul {
+    display: flex;
+    gap: 6rem;     
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 92% ;
+    align-items: center ;
+    justify-content: center ;
+    font-size: 25px ;
+}
+
+nav ul li {
+    padding: 1vh ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--main-color) ;
+    font-weight: 500;
+    width: auto ;
+}
+
+nav ul li a:hover {
+
+    text-decoration : underline ;
+    text-decoration-color : black ;
+    text-decoration-thickness: 4px ;
+    text-underline-offset: 6px ;
+} 
+
+#search-bar-input {
+    
+    border: none ;
+    outline: none ;
+    border-bottom: 1px #222023 solid ;
+}
+
+.search-bar a {
+padding-right: 5px ;
+}
+
+
+
+.search-bar img {
+    height: 11.5px ;
+    width: 11.5px ;
+}
+
+
+
+
+
+
+
+
+/*###################################*/
+
+
+.main-view{
+    height: 100vh ;
+    
+}
+
+.container-main{
+    width: 100% ;
+    height: 100% ;
+    display: flex ;
+    justify-content: center ;
+    flex-direction: column ;
+    background-image: url("assets/shirt-test.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-main-text{
+    padding: 0% 0% 0% 2%  ;
+    background-color: white;
+    border-radius: 0px 0px 0px 0px ;
+}
+
+.container-main-text h2 {
+    width: 100% ;
+
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.container-main-button{
+    padding-top: 2% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 10% ;
+    font-size: 25px ;
+}
+
+.container-main-button a{
+    background-color: white ;
+    width: 8% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    text-decoration: none ;
+    color: var(--main-color) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*###################################*/
+
+.list-view {
+}
+
+.list-view-container{
+    height: 100% ;
+    display: flex ;
+    justify-content: flex-start ;
+    align-items: center ;
+
+    padding: 20px 150px 20px 150px ;
+    gap: 150px ;
+    overflow: auto ;
+    overflow-x: hidden ;
+}
+
+
+.list-item{
+
+    width: 300px  ;
+    height: 500px ;
+    border: none ;
+    box-shadow: 0px 4px 0px 2px black ;
+    flex-shrink: 0;
+    display: flex ;
+    align-items: center ; 
+    justify-content: center ;
+    flex-direction: column ;
+}
+
+
+.list-scroll-button {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 20px ;
+}
+
+.list-scroll-button img {
+    height: 30px ;
+    width: 30px ;
+}
+
+.list-scroll-button  a {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+#list-view-scroll-left
+{
+    transform: rotate(180deg);
+}
+
+
+/*###################################*/
+
+
+
+.try-on-container {
+    height: 80vh ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+
+
+
+
+.gif-container{
+    width: 50%;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    object-position: center ;
+}
+
+.gif-container img {
+    border-radius: 50px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*###################################*/
+
+footer {
+
+    display: flex ;
+    justify-content: center ;
+    flex-direction: column ; 
+}
+
+.navigation{
+    padding: 10px ;
+}
+
+
+
+.copyright h4 {
+    width: 100% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.more {
+    display: flex ;
+    justify-content: space-around ;
+}
+
+.social-icons {
+    display: flex ;
+    justify-content: flex-end ;
+    align-items: center ;
+    width: 48% ;
+    gap: 3vh ;
+    padding-right: 1vh ;
+}
+
+.shipping {
+    width: 48% ;
+}
+
+.social-icons img {
+    width: 30px ;
+    height: 30px ;
+}
+
+#algeria-flag{
+    gap: 2vh ;
+}
+
+#algeria-flag img {
+    height: 25px ;
+    width: 25px ;
+}
+
+#copyright-c-icon{
+    height: 15px ;
+    width: 15px ;
+}
+
+
+.support{
+    display: flex ;
+    justify-content: space-around;
+}
+
+.contact-us ,
+.information {
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    height: auto ;
+    padding: 10px ;
+}
